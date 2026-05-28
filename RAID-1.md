@@ -35,7 +35,19 @@ mount /dev/md0 /mnt/raid1
 **Step 6 —Verify RAID Status**</br>
 mdadm --detail /dev/md0
 
-**
+## Simulate Disk Failure
+**Mark Disk as Failed**</br>
+mdadm --fail /dev/md0 /dev/sda
+
+**Add New Disk to RAID**</br>
+mdadm --add /dev/md0 /dev/sdc
+
+**Remove Failed Disk**</br>
+mdadm --remove /dev/md0 /dev/sda
+
+**Useful Verification Commands**
+lsblk
+
 
 
 
