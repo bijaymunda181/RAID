@@ -45,7 +45,7 @@ mdadm --add /dev/md0 /dev/sdc
 **Remove Failed Disk**</br>
 mdadm --remove /dev/md0 /dev/sda
 
-**Useful Verification Commands**
+**Useful Verification Commands**</br>
 lsblk
 
 
